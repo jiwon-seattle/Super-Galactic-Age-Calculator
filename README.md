@@ -19,7 +19,7 @@ A website created with object oriented JavaScript and HTML where a user input th
 
 ## Setup/Installation Requirements
 
-1. Clone this repository.
+1. Clone this repository, https://github.com/jiwon-seattle/Super-Galactic-Age-Calculator.git.
 2. On your browser, navigate age planet calculator!
 
 ## Known Bugs
