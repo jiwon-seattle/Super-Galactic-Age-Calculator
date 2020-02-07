@@ -19,7 +19,7 @@ export class Planet {
     this.year = year;
   }
 
-  planetAge(planets) {
+  planetAge() {
     const earthYear = 365
     let mercuryYear = new Planet ('mercury', earthYear * 0.24);
     let venusYear = new Planet('venus', earthYear * 0.62);
@@ -28,17 +28,16 @@ export class Planet {
 
     let myYear = 1991
     const thisYear = 2020
-
     let cal = (thisYear - myYear) * 365
 
-    if (mercuryYear) {
-      console.log (cal * mercuryYear.year)
-    } else if (venusYear) {
-      console.log (cal * venusYear.year)
-    } else if (marsYear) {
-      console.log (cal * marsYear.year)
-    } else if (jupiterYear) {
-      console.log (cal * jupiterYear.year)
+    if (this.name == "mercury") {
+      return (cal / mercuryYear.year)
+    } else if (this.name == "venus") {
+      return (cal / venusYear.year)
+    } else if (this.name == "mars") {
+      return (cal / marsYear.year)
+    } else if (this.name == "jupiter") {
+      return (cal / jupiterYear.year)
     }
   }
 

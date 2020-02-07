@@ -7,19 +7,27 @@ describe('Planet', () => {
     const earthYear = 365
     let mercuryYear = new Planet('mercury', earthYear * 0.24);
     let venusYear = new Planet('venus', earthYear * 0.62);
-    let marsYear = new Planet('mars', earthYear * 1.88);      let jupiterYear = new Planet('jupiter', earthYear * 11.86);
+    let marsYear = new Planet('mars', earthYear * 1.88);
+    let jupiterYear = new Planet('jupiter', earthYear * 11.86);
     expect(mercuryYear).toEqual({"name": "mercury", "year": 87.6});
     expect(venusYear).toEqual({"name": "venus", "year": 226.3});
     expect(marsYear).toEqual({"name": "mars", "year": 686.1999999999999});
     expect(jupiterYear).toEqual({"name": "jupiter", "year": 4328.9});
   });
 });
-  //   test('should create class with elements', () => {
-  //     let newDayOfWeek = new DayOfWeek(2020, 2, 11);
-  //     expect(newDayOfWeek.year).toEqual(2020);
-  //     expect(newDayOfWeek.month).toEqual(2);
-  //     expect(newDayOfWeek.day).toEqual(11);
-  //   });
+
+   test('should return age per planet', () => {
+
+     const earthYear = 365
+     let mercuryYear = new Planet ('mercury', earthYear * 0.24);
+     let venusYear = new Planet('venus', earthYear * 0.62);
+     let marsYear = new Planet('mars', earthYear * 1.88);
+     let jupiterYear = new Planet('jupiter', earthYear * 11.86);
+     expect(mercuryYear.planetAge()).toEqual(120.83333333333334);
+     expect(venusYear.planetAge()).toEqual(46.774193548387096);
+     expect(marsYear.planetAge()).toEqual(15.425531914893618);
+     expect(jupiterYear.planetAge()).toEqual(2.4451939291736933);
+   });
   //
   //   test('should return a certain number that represents day', () => {
   //     let var1 = new DayOfWeek(2020, 2, 5);
