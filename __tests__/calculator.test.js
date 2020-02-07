@@ -30,11 +30,15 @@ describe('Planet', () => {
    });
   //
     test('should return life expectancy', () => {
-      // const earthYear = 365
-      // let mercuryYear = new Planet ('mercury', earthYear * 0.24);
-      expect(lifeExpect(mecury)).toEqual("I am sorry. You already passed away! You have lived more 32 years.");
-      //expect(var2.calculateDate()).toEqual(0);
-      //expect(var3.calculateDate()).toEqual(1);
+      const earthYear = 365
+      let mecury = new Planet ('mercury', earthYear * 0.24);
+      let venus = new Planet ('venus', earthYear * 0.62);
+      let mars = new Planet ('mars', earthYear * 1.88);
+      let jupiter = new Planet ('jupiter', earthYear * 11.86)
+      expect(mecury.lifeExpect(mecury)).toEqual("I am sorry. You already passed away! You have lived more 32 years.");
+      expect(venus.lifeExpect(venus)).toEqual("Your life expects to be 88. You still have 41 years.");
+      expect(mars.lifeExpect(mars)).toEqual("Your life expects to be 88. You still have 72 years.");
+      expect(jupiter.lifeExpect(jupiter)).toEqual("Your life expects to be 88. You still have 85 years.");
     });
   //
   //   test('should return string "This is not valid date to the invalid date' , () => {

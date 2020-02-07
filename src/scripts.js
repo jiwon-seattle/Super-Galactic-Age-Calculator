@@ -45,14 +45,14 @@ export class Planet {
     }
   }
 
- lifeExpect(planet) {
-   this.planet = planet.planetAge();
+ lifeExpect(planets) {
+   this.planet = planets.planetAge();
    const lifeExpentancy = 88
    let lifeResult = lifeExpentancy - this.planet
    console.log(lifeResult)
 
    if (lifeResult > 0 ) {
-     return `Your life expects to be ${lifeExpentancy}. You still have ${lifeResult}`
+     return `Your life expects to be ${lifeExpentancy}. You still have ${parseInt(lifeResult)} years.`
    } else {
      return `I am sorry. You already passed away! You have lived more ${parseInt(Math.abs(lifeResult))} years.`
    }
