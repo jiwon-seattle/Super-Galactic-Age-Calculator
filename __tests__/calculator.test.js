@@ -16,8 +16,8 @@ describe('Planet', () => {
   });
 });
 
+// should change the statement to return. ex> 'let mercury =' -> 'return'
    test('should return age per planet', () => {
-
      const earthYear = 365
      let mercuryYear = new Planet ('mercury', earthYear * 0.24);
      let venusYear = new Planet('venus', earthYear * 0.62);
@@ -29,14 +29,13 @@ describe('Planet', () => {
      expect(jupiterYear.planetAge()).toEqual(2.4451939291736933);
    });
   //
-  //   test('should return a certain number that represents day', () => {
-  //     let var1 = new DayOfWeek(2020, 2, 5);
-  //     let var2 = new DayOfWeek(2020, 3, 1);
-  //     let var3 = new DayOfWeek(2020, 4, 13);
-  //     expect(var1.calculateDate()).toEqual(3);
-  //     expect(var2.calculateDate()).toEqual(0);
-  //     expect(var3.calculateDate()).toEqual(1);
-  //   });
+    test('should return life expectancy', () => {
+      // const earthYear = 365
+      // let mercuryYear = new Planet ('mercury', earthYear * 0.24);
+      expect(lifeExpect(mecury)).toEqual("I am sorry. You already passed away! You have lived more 32 years.");
+      //expect(var2.calculateDate()).toEqual(0);
+      //expect(var3.calculateDate()).toEqual(1);
+    });
   //
   //   test('should return string "This is not valid date to the invalid date' , () => {
   //     let var1 = new DayOfWeek("02020", 11, 6);
