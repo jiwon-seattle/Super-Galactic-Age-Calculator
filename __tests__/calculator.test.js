@@ -40,15 +40,4 @@ describe('Planet', () => {
       expect(mars.lifeExpect(mars)).toEqual("Your life expects to be 88. You still have 72 years.");
       expect(jupiter.lifeExpect(jupiter)).toEqual("Your life expects to be 88. You still have 85 years.");
     });
-  //
-  //   test('should return string "This is not valid date to the invalid date' , () => {
-  //     let var1 = new DayOfWeek("02020", 11, 6);
-  //     let var2 = new DayOfWeek(2020, 13, 6);
-  //     let var3 = new DayOfWeek(2020, 11, 33);
-  //     let var4 = new DayOfWeek(2020, 3, "07")
-  //     expect(var1.calculateDate()).toEqual("This is not valid date");
-  //     expect(var2.calculateDate()).toEqual("This is not valid date");
-  //     expect(var3.calculateDate()).toEqual("This is not valid date");
-  //     expect(var4.calculateDate()).toEqual("This is not valid date");
-  //   });
-  // });
+  

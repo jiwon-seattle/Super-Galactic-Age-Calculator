@@ -12,11 +12,10 @@ A website created with object oriented JavaScript and HTML where a user input th
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Program returns user's age in Mercury years** | Topping options: "Cheese", "Pepperoni", "Vegetable" | Output: "Cheese" |
-| **Program returns user's age in Venus years**| Size options: "XL", "L", "M", "S" | Output: "M" |
-| **Program returns user's age in Mars years**| Input: "Cheese", "M" | Output: "$15" |
-| **Program returns user's age in Jupiter years**| Input: "Cheese", "M" | Output: "$15" |
-| **Program determines average life expectancy**| Input: "Cheese", "M" | Output: "$15" |
+| **Program returns a planet year based on Earth age** | Input: "venus" | Output: "226.3 year" |
+| **Program returns a current user age per planets** | Input: "1991"  | Output: "In Jupiter, you are 2 years old" |
+| **Program returns user's life expectancy**| Input: "1991" | Output: "Your life expects to be 88. You still have 72 years in Mars." |
+| **Program returns user's life expectancy**| Input: "1991" | Output: "I am sorry. You already passed away! You have lived more 32 years in Mercury." |
 
 ## Setup/Installation Requirements
 
