@@ -57,5 +57,4 @@ export class Planet {
      return `I am sorry. You already passed away! You have lived more ${parseInt(Math.abs(lifeResult))} years.`
    }
  }
-
 }

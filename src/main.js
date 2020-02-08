@@ -6,6 +6,9 @@ import $ from 'jquery';
 import { Planet } from './scripts';
 
 $(document).ready(function(){
-  console.log(mercury)
+  Planet
+  $("#mecury").click(function(){
+    $("#mecuryReult").text(mercuryYear)
+  })
 
 })
