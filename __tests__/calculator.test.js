@@ -14,10 +14,9 @@ describe('Planet', () => {
     expect(marsYear).toEqual({"name": "mars", "year": 686.1999999999999});
     expect(jupiterYear).toEqual({"name": "jupiter", "year": 4328.9});
   });
-});
 
 // should change the statement to return. ex> 'let mercury =' -> 'return'
-   test('should return age per planet', () => {
+   test('should return an age per planet', () => {
      const earthYear = 365
      let mercuryYear = new Planet ('mercury', earthYear * 0.24);
      let venusYear = new Planet('venus', earthYear * 0.62);
@@ -28,7 +27,7 @@ describe('Planet', () => {
      expect(marsYear.planetAge()).toEqual(15.425531914893618);
      expect(jupiterYear.planetAge()).toEqual(2.4451939291736933);
    });
-  //
+
     test('should return life expectancy', () => {
       const earthYear = 365
       let mecury = new Planet ('mercury', earthYear * 0.24);
@@ -40,4 +39,4 @@ describe('Planet', () => {
       expect(mars.lifeExpect(mars)).toEqual("Your life expects to be 88. You still have 72 years.");
       expect(jupiter.lifeExpect(jupiter)).toEqual("Your life expects to be 88. You still have 85 years.");
     });
-  
+});
