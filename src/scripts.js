@@ -1,60 +1,45 @@
-// class PlanetAge {
-//   constructor() {
-//     this.planets = [];
-//     this.planetId = 0;
-//   }
-//   AddPlanet(planets) {
-//     this.planets.push(planet);
-//     planet.planetId = this.assignId()
-//   }
-//   AssignId() {
-//     this.planetId += 1;
-//     return this.planetId;
-//   }
-// }
 
-export class Planet {
+  export class Planet {
   constructor(name, year) {
-    this.name = name;
-    this.year = year;
+  this.name = name;
+  this.year = year;
   }
 
-  planetAge() {
-    const earthYear = 365
-    let mercuryYear = new Planet ('mercury', earthYear * 0.24);
-    let venusYear = new Planet('venus', earthYear * 0.62);
-    let marsYear = new Planet('mars', earthYear * 1.88);
-    let jupiterYear = new Planet('jupiter', earthYear * 11.86);
-
-    let myYear = 1991
+  planetAge(planet, bornYear) {
+    this.planet = planet
     const thisYear = 2020
-    let cal = (thisYear - myYear) * 365
+    this.bornYear = bornYear
+    let cal = (thisYear - bornYear) * 365
+    let age = parseInt(cal / this.year)
 
-    if (this.name == "mercury") {
-      return cal / mercuryYear.year
+    const lifeExpentancy = Math.floor(Math.random() * 30) + 70
+    let lifeResult = lifeExpentancy - age
 
-    } else if (this.name == "venus") {
-      let venus = (cal / venusYear.year)
-      return venus
-    } else if (this.name == "mars") {
-      let mars = (cal / marsYear.year)
-      return mars
-    } else if (this.name == "jupiter") {
-      let jupiter = (cal / jupiterYear.year)
-      return jupiter
+    if (lifeResult > 0 ) {
+      return `Age in ${this.planet.name} is ${age}. Your life expects to be ${lifeExpentancy}. You still have ${parseInt(lifeResult)} years.`
+    } else {
+      return `I am sorry. You already passed away! Your age in ${this.planet.name} is ${age}. You have lived more ${parseInt(Math.abs(lifeResult))} years. Your life expected to be ${lifeExpentancy}.`
     }
+
   }
 
- lifeExpect(planets) {
-   this.planet = planets.planetAge();
-   const lifeExpentancy = 88
-   let lifeResult = lifeExpentancy - this.planet
-   console.log(lifeResult)
+}
 
-   if (lifeResult > 0 ) {
-     return `Your life expects to be ${lifeExpentancy}. You still have ${parseInt(lifeResult)} years.`
-   } else {
-     return `I am sorry. You already passed away! You have lived more ${parseInt(Math.abs(lifeResult))} years.`
-   }
- }
+export class PlanetArray {
+
+  constructor() {
+    this.planets = []
+    this.planetId = 0;
+  }
+
+  addPlanet(planet) {
+    this.planets.push(planet);
+    planet.planetId = this.assignId();
+  }
+
+  assignId() {
+    this.planetId += 1;
+    return this.planetId;
+  }
+
 }
