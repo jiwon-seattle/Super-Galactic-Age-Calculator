@@ -19,8 +19,11 @@ A website created with object oriented JavaScript and HTML where a user input th
 
 ## Setup/Installation Requirements
 
-1. Clone this repository, https://github.com/jiwon-seattle/Super-Galactic-Age-Calculator.git.
-2. On your browser, navigate age planet calculator!
+1. Download and install Node.js from the official website.
+2. Clone this repository, https://github.com/jiwon-seattle/Super-Galactic-Age-Calculator.git.
+3. Use a command line/Bash to navigate to this project.
+4. Run npm install to get all dependencies.
+5. Run npm start to initiate the program.
 
 ## Known Bugs
 * No known bugs at this time.
@@ -31,6 +34,7 @@ A website created with object oriented JavaScript and HTML where a user input th
 * Node.js
 * HTML
 * CSS
+* NPM
 
 ## Support and contact details
 
