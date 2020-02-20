@@ -1,8 +1,8 @@
 
   export class Planet {
   constructor(name, year) {
-  this.name = name;
-  this.year = year;
+  this.name = name
+  this.year = year
   }
 
   planetAge(planet, bornYear) {
@@ -33,13 +33,13 @@ export class PlanetArray {
   }
 
   addPlanet(planet) {
-    this.planets.push(planet);
-    planet.planetId = this.assignId();
+    this.planets.push(planet)
+    planet.planetId = this.assignId()
   }
 
   assignId() {
-    this.planetId += 1;
-    return this.planetId;
+    this.planetId += 1
+    return this.planetId
   }
 
 }
