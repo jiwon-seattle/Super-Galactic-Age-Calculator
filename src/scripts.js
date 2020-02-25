@@ -18,7 +18,7 @@
     if (lifeResult > 0 ) {
       return `Age in ${this.planet.name} is ${age}. Your life expects to be ${lifeExpentancy}. You still have ${parseInt(lifeResult)} years.`
     } else {
-      return `I am sorry. You already passed away! Your age in ${this.planet.name} is ${age}. You have lived more ${parseInt(Math.abs(lifeResult))} years. Your life expected to be ${lifeExpentancy}.`
+      return `I am sorry. You already passed away! Your age in ${this.planet.name} is ${age}. Your present age is ${parseInt(Math.abs(lifeResult))} years. Your life expected to be ${lifeExpentancy}.`
     }
 
   }
