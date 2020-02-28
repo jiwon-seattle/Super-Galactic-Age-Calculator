@@ -1,6 +1,6 @@
 # Super Galactic Age Calculator
 
-#### An application that determines a user’s age based on a planet’s solar years. 2/7/20
+#### An application that determines a user’s age based on planet’s solar years. 2/7/20
 
 #### By **Jiwon Han**
 
